@@ -1,0 +1,119 @@
+//Guilherme Monte-Mor 06/04/2021
+
+//ExercÃ­cios Entrada Processamento Saida JS
+
+/*
+
+    1 - Elaborar um programa que leia o valor de um jantar. 
+    Calcule e informe o valor da taxa do garÃ§om (10%) e o valor total a ser pago
+
+    Ex:
+        Valor do Jantar: R$ 80.00
+        Taxa do GarÃ§om: R$ 8.00
+        Total a pagar: R$ 88.00
+
+*/
+
+
+var valor = Number(prompt("valor do jantar"));
+var taxa = valor * 0.1;
+var total = valor + taxa
+
+alert(`Valor da taxa do garcom foi de: ${taxa} `)
+alert(`Valor total do seu jantar foi de: R$ ${total}` )
+
+
+/*
+
+    2 - Elaborar um programa que leia a duraÃ§Ã£o de uma viagem em dias e horas.
+    Calcule e informe a duraÃ£o total da viagem em nÃºmero de horas.
+
+
+    Ex:
+        NÂº Dias: 2
+        NÂº Horas: 5
+        Total de Horas: 53
+
+*/
+
+
+
+alert(" Quantos tempo durara sua viagem? Ex: 4 dias e 5 horas");
+var diasviagem = Number(prompt("Dias"))
+var horasviagem = Number(prompt("Horas"));
+var totalviagem = (diasviagem * 24) + horasviagem ;
+alert(`O tempo total da sua viagem e de: ${totalviagem} horas` )
+
+/*
+    3 - Elaborar um programa que leia um nÃºmero.
+    Calcule e informe os seus vizinhos, ou seja, o nÃºmero anterior e o nÃºmero posterior  
+
+    Exemplo:
+        NÃºmero: 15
+        Vizinhos: 14 e 16
+
+*/
+
+var number = Number(prompt("Numero desejado"))
+var previousnumber = number - 1
+var posteriornumber = number + 1
+
+
+alert(` Seus vizinhos sao o ${previousnumber} e ${posteriornumber} `)
+
+
+/*
+    4 - Elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vÃ£o pagÃ¡-la.
+    Calcule e informe o valor a ser pago por cliente.
+
+    Exemplo:
+        Valor da conta: R$ 90.00
+        NÃºmero de clientes: 3
+        Valor por cliente: 30.00
+*/
+  
+
+var valorconta = Number(prompt("Valor da conta"));
+var clientes = Number(prompt("Numero de clientes a dividir a conta"));
+var total = valorconta / clientes;
+
+alert(` O valor da total conta que foi dividido entre ${clientes} clientes foi de R$ ${total} `);
+
+ 
+
+/*
+    5 - Elaborar um programa para uma loja, o qual leia o preÃ§o de um prouto e informe as opÃ§Ãµes de pagamento.
+    Calcule e informe o valor para pagamento Ã  vista com 10% de desconto e o valor em 3x.
+
+    Exemplo:
+        PreÃ§o: R$ 60.00
+        Ã€ vista: R$ 54.00
+        Ou 3x de R$: 20.00
+*/
+ 
+
+var preco = Number(prompt("Preco do produto"));
+var precoavista = preco * 0.9;
+var precoparc = preco / 3;
+alert(`Preco parcelado em 3 meses sera de ${precoparc} reais e com pagamento a vista sera de ${precoavista} reais. `);
+
+
+
+/*
+    6 - Elaborar um programa que leia 3 notas de um aluno em uma determinada disciplina.
+    Calcule e informe a mÃ©dia das notas.
+
+    Exemplo:
+        1Âª Nota: 7.5
+        2Âª Nota: 8.0
+        3Âª Nota: 6.4
+        MÃ©dia: 7.3
+*/  
+
+var n1 = Number(prompt("Digite a nota 1"))
+var n2 = Number(prompt("Digite a nota 2"))
+var n3 = Number(prompt("Digite a nota 3"))
+
+var f = (n1 + n2 + n3) / 3
+
+alert(`A media final foi: ${f}`);
