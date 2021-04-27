@@ -12,11 +12,11 @@ function calc(){
     outav2.textContent = `Av2 = ${av2}`
     outav3.textContent = `Av3 = ${av3}`
     //magic
-    if (av1 <= 4 || av2 <= 4) {
+    if (av1 < 4 || av2 < 4) {
         av1 = 0
     }
 
-    if (av1 <= 4 || av2 <= 4) {
+    if (av1 < 4 || av2 < 4) {
         av2 = 0
     }
 
