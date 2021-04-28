@@ -12,13 +12,7 @@ function calc(){
     outav2.textContent = `Av2 = ${av2}`
     outav3.textContent = `Av3 = ${av3}`
     //magic
-    if (av1 < 4 || av2 < 4) {
-        av1 = 0
-    }
-
-    if (av1 < 4 || av2 < 4) {
-        av2 = 0
-    }
+    
 
     if (av1 >= av2) {
         if (av2 >= av3) {
@@ -28,13 +22,21 @@ function calc(){
     }
     else if (av2 >= av1) {
         if (av1 >= av3 ) {
-            av1 = av1
-        }
-        else{
-            av1 = av3
-        }     
+            av1 = av1}
+        else{av1 = av3}     
+    
     }
+
+    if (av1 < 4 || av2 < 4) {
+        av1 = 0
+    }
+
+    if (av1 < 4 || av2 < 4) {
+        av2 = 0
+    }
+
     var media = (av1 + av2) / 2
+    alert(media)
     //outs2
     if (av1 < 4 || media < 6 || av2 < 4 ) { 
         outresult.textContent= `Infelizmente ${aluno}, você foi reprovado.`
